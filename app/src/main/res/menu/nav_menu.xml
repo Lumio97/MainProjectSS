@@ -5,26 +5,26 @@
     <group>
         <item
                 android:id="@+id/button1"
-                android:title="РД-180"
+                android:title="Глава I.Фундаментальные положения ракетной науки"
                 app:srcCompat="@drawable/rocket"/>
         <item
                 android:id="@+id/button2"
                 app:srcCompat="@drawable/rocket"
-                android:title="РД-170"/>
+                android:title="Глава II. Основы баллистики ракет"/>
         <item
                 android:id="@+id/button3"
                  app:srcCompat="@drawable/rocket"
-                android:title="РД-120"/>
+                android:title="Глава III. Классификация и основные характеристики ракет"/>
 
 
         <item
                     android:id="@+id/button4"
                      app:srcCompat="@drawable/rocket"
-                    android:title="F-1"/>
+                    android:title="Глава IV. Основы проектирования ракет"/>
         <item
                     android:id="@+id/button5"
                     app:srcCompat="@drawable/rocket"
-                    android:title="Мерлин"/>
+                    android:title="Глава V. Краткая история развития ракетостроения"/>
 
     </group>
 
