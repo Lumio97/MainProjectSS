@@ -1,4 +1,4 @@
-package com.androdocs.navigationdrawer
+package com.androdocs.Rocket_App
 
 import org.junit.Test
 

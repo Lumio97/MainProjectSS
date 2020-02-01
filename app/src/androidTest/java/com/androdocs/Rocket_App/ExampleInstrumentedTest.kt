@@ -1,4 +1,4 @@
-package com.androdocs.navigationdrawer
+package com.androdocs.Rocket_App
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4
