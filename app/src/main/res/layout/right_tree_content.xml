@@ -5,14 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="30dp">
+    android:layout_height="250dp">
 
     <LinearLayout
         android:id="@+id/MainContentTwo"
         android:layout_width="150dp"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         >
@@ -22,10 +22,12 @@
             android:layout_height="20dp"/>
 
         <ImageView
+            android:id="@+id/ImageTwo"
             android:layout_width="match_parent"
             android:layout_height="80dp"/>
 
         <TextView
+            android:id="@+id/MainTextTwo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
@@ -37,18 +39,19 @@
         android:id="@+id/guideLine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/test"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5"
-        />
+        app:layout_constraintGuide_percent="0.5" />
 
     <View
         android:layout_width="0dp"
         android:layout_height="4dp"
         android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/guideLine"
         app:layout_constraintEnd_toStartOf="@id/MainContentTwo"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+
         />
 
 
