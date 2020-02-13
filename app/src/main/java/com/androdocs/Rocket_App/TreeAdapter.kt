@@ -41,9 +41,9 @@ class TreeAdapter(
         /// Тут вопрос
 
         if (getItemViewType(position) == TYPE_ONE) {
-            (holder as ElementOneHolder).bind(data(List<Chapter5>))
+            (holder as ElementOneHolder).bind(data[position])
         } else {
-            (holder as ElementTwoHolder).bind(data[])
+            (holder as ElementTwoHolder).bind(data[position])
         }
 
     }
@@ -53,7 +53,13 @@ class TreeAdapter(
 
     private class ElementOneHolder(item: View) : RecyclerView.ViewHolder(item) {
         fun bind(data: List<Chapter5>) = itemView.apply {
-            MainContentOne.text = text
+            // не давай названия айдишникам с большой буквы
+            MainContentOne.text = data.mainText
+            TextOne.text = data.title
+            
+            // и т.д.
+            // кстати, два последних поля в классе Chapter5 лишние
+            
             // Здесь уже посложнее с view,где картинки,текст и т.д.
         }
     }
