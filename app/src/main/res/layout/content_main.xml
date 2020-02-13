@@ -37,10 +37,41 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Место для наполнения контентом"/>
+
+             <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button1"
+                android:text="Глава I.Фундаментальные положения ракетной науки"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button2"
+                android:text="Глава II. Основы баллистики ракет"
+
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button3"
+                android:text="Глава III. Классификация и основные характеристики ракет"
+
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/button4"
+                android:text="Глава IV. Основы проектирования ракет"
+                />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Глава V. Краткая история развития ракетостроения" />
+
+
     </LinearLayout>
 
 </LinearLayout>

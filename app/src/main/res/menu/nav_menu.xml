@@ -4,28 +4,28 @@
 
     <group>
         <item
-                android:id="@+id/button1"
-                android:title="Глава I.Фундаментальные положения ракетной науки"
+                android:id="@+id/button6"
+                android:title="1"
                 android:drawableLeft="@drawable/ic_launcher_round"
                 />
         <item
-                android:id="@+id/button2"
+                android:id="@+id/button7"
                 android:drawableLeft="@drawable/rocket"
-                android:title="Глава II. Основы баллистики ракет"/>
+                android:title="2"/>
         <item
-                android:id="@+id/button3"
+                android:id="@+id/button8"
                 android:drawableLeft="@drawable/rocket"
-                android:title="Глава III. Классификация и основные характеристики ракет"/>
+                android:title="3"/>
 
 
         <item
-                    android:id="@+id/button4"
+                    android:id="@+id/button9"
                      android:drawableLeft="@drawable/rocket"
-                    android:title="Глава IV. Основы проектирования ракет"/>
+                    android:title="4"/>
         <item
-                    android:id="@+id/button5"
+                    android:id="@+id/button10"
                     android:drawableLeft="@drawable/rocket"
-                    android:title="Глава V. Краткая история развития ракетостроения"/>
+                    android:title="5"/>
 
     </group>
 

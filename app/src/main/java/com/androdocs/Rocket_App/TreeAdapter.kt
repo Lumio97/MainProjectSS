@@ -1,13 +1,11 @@
 package com.androdocs.Rocket_App
 
-import android.media.Image
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
-import androidx.core.view.get
-import androidx.core.view.size
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.androdocs.Rocket_App.data.Chapter5
 import kotlinx.android.synthetic.main.left_tree_content.view.*
 import kotlinx.android.synthetic.main.nav_header.view.*
 import kotlinx.android.synthetic.main.right_tree_content.view.*
@@ -15,7 +13,7 @@ import kotlinx.android.synthetic.main.right_tree_content.view.*
 //Стандартное описание ViewHolder
 
 class TreeAdapter(
-    private val data: List<LinearLayout> // Параметры в <> уже другие
+    private val data: List<Chapter5> // Параметры в <> уже другие
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private val TYPE_ONE = 0
@@ -40,22 +38,27 @@ class TreeAdapter(
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
 
+        /// Тут вопрос
+
         if (getItemViewType(position) == TYPE_ONE) {
-            (holder as ElementOneHolder).bind(data[position])
+            (holder as ElementOneHolder).bind(data(List<Chapter5>))
         } else {
-            (holder as ElementTwoHolder).bind(data[position])
+            (holder as ElementTwoHolder).bind(data[])
         }
 
     }
 
+
+    /// И ТУТ
 
     private class ElementOneHolder(item: View) : RecyclerView.ViewHolder(item) {
-        fun bind(text: String) = itemView.apply {
-            MainContentOne. = text  // Здесь уже посложнее с view,где картинки,текст и т.д.
+        fun bind(data: List<Chapter5>) = itemView.apply {
+            MainContentOne.text = text
+            // Здесь уже посложнее с view,где картинки,текст и т.д.
         }
     }
 
-    private class ElementTwoHolder(item: View) : RecyclerView.ViewHolder(item) {
+    private class ElementTwoHolder(item) : RecyclerView.ViewHolder(item) {
         fun bind(text: String) = itemView.apply {
             MainContentTwo.imageView = imageView // Также
         }

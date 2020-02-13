@@ -10,6 +10,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
+import kotlinx.android.synthetic.main.chapter_5_view.*
 
 class  MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -17,9 +18,14 @@ class  MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
     lateinit var toolbar: Toolbar
     lateinit var drawerLayout: DrawerLayout
     lateinit var navView: NavigationView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        itemList.adapter = TreeAdapter(listOf(
+
+        ))
 
         toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -57,7 +63,8 @@ class  MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         return true
     }
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
-    }
+
+
+
+
 }
