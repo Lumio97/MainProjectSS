@@ -27,6 +27,8 @@
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/left_tree_content" />
 
+
+
             <!--  то есть LinearLayout,то список будет*( в линию)-->
         </androidx.constraintlayout.widget.ConstraintLayout>
 

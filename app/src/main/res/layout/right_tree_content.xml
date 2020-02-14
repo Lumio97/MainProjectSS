@@ -8,7 +8,7 @@
     android:layout_height="250dp">
 
     <LinearLayout
-        android:id="@+id/MainContentTwo"
+        android:id="@+id/mainContentTwo"
         android:layout_width="150dp"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -17,17 +17,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         >
         <TextView
-            android:id="@+id/TextTwo"
+            android:id="@+id/textTwo"
             android:layout_width="match_parent"
             android:layout_height="20dp"/>
 
         <ImageView
-            android:id="@+id/ImageTwo"
+            android:id="@+id/imageTwo"
             android:layout_width="match_parent"
             android:layout_height="80dp"/>
 
         <TextView
-            android:id="@+id/MainTextTwo"
+            android:id="@+id/mainTextTwo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
@@ -48,7 +48,7 @@
         android:background="@drawable/rocket_flame_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/guideLine"
-        app:layout_constraintEnd_toStartOf="@id/MainContentTwo"
+        app:layout_constraintEnd_toStartOf="@id/mainContentTwo"
         app:layout_constraintTop_toTopOf="parent"
 
         />
