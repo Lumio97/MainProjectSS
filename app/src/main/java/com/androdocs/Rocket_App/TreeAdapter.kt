@@ -56,11 +56,10 @@ class TreeAdapter(
 
 
     private class ElementOneHolder(item: View) : RecyclerView.ViewHolder(item) {
-        @SuppressLint("ResourceType")
         fun bind(data: Chapter5) = itemView.apply {
             textOne.text = data.title
             mainTextOne.text= data.mainText
-            imageOne.setImageResource(R.drawable.rocket_flame_3).toString()
+            imageOne.setImageDrawable(resources.getDrawable(R.drawable.rocket2))
         }
 
     }
@@ -70,7 +69,8 @@ class TreeAdapter(
         fun bind(data: Chapter5) = itemView.apply {
             textTwo.text = data.title
             mainTextTwo.text = data.mainText
-            imageTwo.setImageResource(R.drawable.rocket_flame_2).toString()
+            imageTwo.setImageDrawable(resources.getDrawable(R.drawable.rocket2))
+
         }
     }
 
